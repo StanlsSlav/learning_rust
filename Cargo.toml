@@ -1,0 +1,15 @@
+[package]
+name = "learning_rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.22.0", features = ["full"] }
+diesel = { version = "2.0.2", features = ["postgres"] }
+warp = "0.3.3"
+serde = "1.0.147"
+serde_derive = "1.0.147"
+pretty_env_logger = "0.4.0"
+dotenvy = "0.15.6"

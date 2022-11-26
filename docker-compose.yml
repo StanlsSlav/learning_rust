@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  rust:
+    image: arm32v7/rust:buster
+    restart: always
+    ports:
+      - "3030:3030"
+
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: rpi
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: shopping_list
